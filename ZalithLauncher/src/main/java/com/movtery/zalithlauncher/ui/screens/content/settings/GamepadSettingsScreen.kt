@@ -195,7 +195,7 @@ BaseScreen(
 
                     ListSettingsCard(
                         modifier = Modifier.fillMaxWidth(),
-                        position = CardPosition.Bottom,
+                        position = CardPosition.Middle,
                         unit = AllSettings.gamepadInputMode,
                         items = GamepadInputMode.entries,
                         title = stringResource(R.string.settings_gamepad_input_mode_title),
@@ -209,6 +209,15 @@ BaseScreen(
                                 style = MaterialTheme.typography.labelSmall
                             )
                         },
+                        enabled = AllSettings.gamepadControl.state
+                    )
+
+                    SwitchSettingsCard(
+                        modifier = Modifier.fillMaxWidth(),
+                        position = CardPosition.Bottom,
+                        unit = AllSettings.sdl3Compat,
+                        title = stringResource(R.string.settings_gamepad_sdl3_title),
+                        summary = stringResource(R.string.settings_gamepad_sdl3_summary),
                         enabled = AllSettings.gamepadControl.state
                     )
                 }

@@ -1019,6 +1019,8 @@
     <string name="settings_gamepad_input_mode_mapped_summary">手柄按键与摇杆作为虚拟键盘和鼠标使用</string>
     <string name="settings_gamepad_input_mode_sdl">SDL 直通</string>
     <string name="settings_gamepad_input_mode_sdl_summary">手柄输入经 SDL/GLFW gamepad API 原样交给游戏，不经过按键映射</string>
+    <string name="settings_gamepad_sdl3_title">SDL3 手柄注入</string>
+    <string name="settings_gamepad_sdl3_summary">将手柄事件注入 SDL3 事件队列，使仅支持 SDL3 的模组（Controlify 2.0 / ControlFlex / MidnightControls）能读到手柄。关闭后仅使用 SDL2 原生通路。</string>
     <string name="gamepad_mode_prompt_description">检测到手柄输入。启动器支持两种手柄输入模式，请选择您希望使用的模式。</string>
     <string name="gamepad_mode_prompt_hint">稍后可以在游戏菜单的“手柄”分页或启动器设置中更改。</string>
     <string name="settings_gamepad_deadzone_title">手柄死区缩放</string>

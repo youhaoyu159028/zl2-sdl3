@@ -271,6 +271,13 @@ object AllSettings : SettingsRegistry() {
     val gamepadInputMode = enumSetting("gamepadInputMode", GamepadInputMode.Mapped)
 
     /**
+     * 是否启用 SDL3 手柄注入（手动开关）
+     * 开启时把手柄事件同步注入 SDL3 事件队列, 使纯 SDL3 手柄模组能读到手柄;
+     * 关闭时 SDL3 桥不初始化、不注入, 只保留 SDL2 原生通路。
+     */
+    val sdl3Compat = boolSetting("sdl3Compat", true)
+
+    /**
      * 是否已完成手柄输入模式的选择询问
      */
     val gamepadInputModePrompted = boolSetting("gamepadInputModePrompted", false)

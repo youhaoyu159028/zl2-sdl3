@@ -1020,6 +1020,8 @@
     <string name="settings_gamepad_input_mode_mapped_summary">Gamepad buttons and joysticks act as virtual keyboard and mouse</string>
     <string name="settings_gamepad_input_mode_sdl">SDL Direct</string>
     <string name="settings_gamepad_input_mode_sdl_summary">Raw gamepad input is delivered to the game via the SDL/GLFW gamepad API; button remapping is bypassed</string>
+    <string name="settings_gamepad_sdl3_title">SDL3 Gamepad Injection</string>
+    <string name="settings_gamepad_sdl3_summary">Inject gamepad events into the SDL3 event queue so SDL3-only mods (Controlify 2.0 / ControlFlex / MidnightControls) can read the gamepad. Disable to use only the SDL2 native path.</string>
     <string name="gamepad_mode_prompt_description">Gamepad input detected. The launcher supports two gamepad input modes; please choose the one you want to use.</string>
     <string name="gamepad_mode_prompt_hint">You can change this later in the "Gamepad" tab of the in-game menu or in the launcher settings.</string>
     <string name="settings_gamepad_deadzone_title">Gamepad Deadzone Scaling</string>
